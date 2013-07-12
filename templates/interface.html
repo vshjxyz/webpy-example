@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Incuna test app</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- styles -->
+		<link href="../static/css/bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+				background: url('../static/img/darktire.png');
+			}
+
+			.maincontainer {
+				padding: 20px;
+				background: #ffffff;
+				-webkit-border-radius: 8px;
+				border-radius: 8px;
+			}
+
+			.wrapper {
+                box-sizing: border-box;
+				-webkit-box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+				box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+				width: 100%;
+				padding: 15px;
+				display: table;
+			}
+
+			.output {
+				height: 400px;
+				overflow: auto;
+			}
+
+			#preloader {
+				text-align: center;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		</style>
+		<link href="../static/css/bootstrap-responsive.css" rel="stylesheet">
+
+		<!-- IE6-8 Support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="span10 offset1 maincontainer">
+					<div class="hero-unit wrapper">
+						<div class="output">
+
+						</div>
+						<div id="preloader">
+							<img src="../static/img/preloader.gif" alt="loading..." />
+						</div>
+					</div>
+					<div class="actions">
+						<a id="consolelist" class="btn" href="#">Print the ordered list to console</a>
+						<a id="printlist" class="btn" href="#">Print the ordered list here</a>
+						<a id="writelist" class="btn" href="#">Write ordered list to disk</a>
+						<a id="emaillist" class="btn" href="#">E-mail the ordered list</a>
+						<a id="gistlist" class="btn" href="#">Post the ordered list to a gist</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src="../static/js/jquery.min.js"></script>
+		<script src="../static/js/bootstrap.min.js"></script>
+		<script src="../static/js/interface.js"></script>
+	</body>
+</html>
